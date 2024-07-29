@@ -35,11 +35,11 @@ export PROJECT_ID=$(gcloud config list --format 'value(core.project)')
 
 gsutil mb gs://$PROJECT_ID
 
-curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/main/Detect%20Labels%2C%20Faces%2C%20and%20Landmarks%20in%20Images%20with%20the%20Cloud%20Vision%20API/city.png
+curl -LO raw.githubusercontent.com/Ayush7-BIT/Images-Arcade/main/PubSub%20Lite%3A%20Qwik%20Start/city.png
 
-curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/main/Detect%20Labels%2C%20Faces%2C%20and%20Landmarks%20in%20Images%20with%20the%20Cloud%20Vision%20API/donuts.png
+curl -LO raw.githubusercontent.com/Ayush7-BIT/Images-Arcade/main/PubSub%20Lite%3A%20Qwik%20Start/donuts.png
 
-curl -LO raw.githubusercontent.com/QUICK-GCP-LAB/2-Minutes-Labs-Solutions/main/Detect%20Labels%2C%20Faces%2C%20and%20Landmarks%20in%20Images%20with%20the%20Cloud%20Vision%20API/selfie.png
+curl -LO raw.githubusercontent.com/Ayush7-BIT/Images-Arcade/main/PubSub%20Lite%3A%20Qwik%20Start/selfie.png
 
 gsutil cp donuts.png gs://$PROJECT_ID
 
