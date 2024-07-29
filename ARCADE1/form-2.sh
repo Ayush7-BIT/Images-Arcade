@@ -3,5 +3,6 @@ gcloud alpha storage buckets update gs://$DEVSHELL_PROJECT_ID-gcs-bucket --no-un
 gsutil acl ch -u $USER_EMAIL:OWNER gs://$DEVSHELL_PROJECT_ID-gcs-bucket
 gsutil rm gs://$DEVSHELL_PROJECT_ID-gcs-bucket/sample.txt
 gsutil cp sample.txt gs://$DEVSHELL_PROJECT_ID-gcs-bucket
+echo "BCW" > sample.txt
 gsutil acl ch -u allUsers:R gs://$DEVSHELL_PROJECT_ID-gcs-bucket/*
 gcloud storage buckets update gs://$DEVSHELL_PROJECT_ID-bucket-ops --update-labels=cloud=hustlers
