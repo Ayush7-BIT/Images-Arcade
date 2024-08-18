@@ -103,4 +103,4 @@ gcloud functions deploy GCFunction \
   --max-instances=5
 
 
-DATA=$(printf 'Subscribe to quicklab' | base64) && gcloud functions call GCFunction --region=$REGION --data '{"data":"'$DATA'"}'
+DATA=$(printf 'Congratulations' | base64) && gcloud functions call GCFunction --region=$REGION --data '{"data":"'$DATA'"}'
